@@ -1,0 +1,164 @@
+%-------------------------------------------------------------------------------
+% Richard Clark -- Resume
+% Compile with: pdflatex richard_clark_resume.tex
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% ----- Page geometry -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{5pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ----- Section formatting -----
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% ----- Custom commands -----
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% ============================== HEADING ==============================
+\begin{center}
+    {\Huge \scshape Richard Clark} \\ \vspace{3pt}
+    \small Southbend, IN 46637 $|$
+    \href{tel:7655912140}{574-310-4335} $|$
+    \href{mailto:rickyclarkoftih@outlook.com}{rickyclarkoftih@outlook.com} $|$
+\end{center}
+\vspace{-6pt}
+
+% ============================== SUMMARY ==============================
+\section{Summary}
+\small{
+Data Center Operations Technician with hands-on hyperscale data center experience in server break-fix,
+rack-level troubleshooting, hardware diagnostics, inventory handling, and shift-based operations. Experienced
+diagnosing production server issues across hardware, Linux operating systems, and networking. Background in
+IT support, manufacturing quality control, and infrastructure maintenance.
+}
+\vspace{-4pt}
+
+% ============================== EXPERIENCE ==============================
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Amazon Web Services}{March 2026 -- Present}
+    {Data Center Operations Technician (L3)}{South Bend, IN}
+    \resumeItemListStart
+      \resumeItem{Resolved \textbf{250+ data center operations tickets} across server break-fix, rack-level events, networking, operating system, and hardware diagnostic workflows.}
+      \resumeItem{Perform component-level repair and preventative maintenance on production server infrastructure, including physical inspection, replacement, validation, and return-to-service procedures.}
+      \resumeItem{Diagnose server and infrastructure issues involving hardware faults, Linux host behavior, network connectivity, rack health, and service-impacting events.}
+      \resumeItem{Act as a first responder for rack-down incidents, restoring failed racks to service while following escalation paths and minimizing customer impact.}
+      \resumeItem{Support internal data hall laptop and tooling fleet by keeping systems patched, charged, operational, and available for technician use.}
+      \resumeItem{Serve as an escalation point for newer technicians on complex hardware, networking, and procedural issues.}
+      \resumeItem{Contribute operational feedback and technician use cases for internal tooling improvements supporting data center workflows.}
+    \resumeItemListEnd
+
+  \vspace{\baselineskip}
+
+  \resumeSubheading
+    {TS TECH}{February 2023 -- January 2026}
+    {IT Technician}{New Castle, IN}
+    \resumeItemListStart
+      \resumeItem{Maintained network connectivity across production floor stations, troubleshooting and resolving outages to minimize manufacturing downtime.}
+      \resumeItem{Installed and configured computer hardware, software, networks, printers, and scanners for end users.}
+      \resumeItem{Ran cable and deployed new workstations to support facility expansion and production needs.}
+      \resumeItem{Diagnosed and resolved technical issues for staff via in-person and remote support.}
+      \resumeItem{Maintained inventory of IT equipment and supplies; provided training to new employees on systems and protocols.}
+    \resumeItemListEnd
+
+  \vspace{\baselineskip}
+
+  \resumeSubheading
+    {Miller Pipeline LLC}{May 2022 -- January 2023}
+    {Laborer}{New Castle, IN}
+    \resumeItemListStart
+      \resumeItem{Assisted in trenching and backfilling operations for utility installations.}
+      \resumeItem{Collaborated with team members to complete physical infrastructure projects on schedule.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+% ============================== SKILLS ==============================
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Data Center Operations}{: Server break-fix, component replacement, rack-level troubleshooting, preventative maintenance, inventory audits, asset movement, escalation handling} \\ \vspace{2pt}
+    \textbf{Hardware}{: Server components, BIOS/firmware, disks, memory, power, cabling, physical inspection, hardware validation} \\ \vspace{2pt}
+    \textbf{Operating Systems}{: Linux, Debian, Ubuntu, Proxmox VE, Bash, system diagnostics} \\ \vspace{2pt}
+    \textbf{Networking}{: TCP/IP, VLANs, switching/routing, DHCP, DNS, PXE/iPXE, dnsmasq, reverse proxying, Tailscale, network troubleshooting} \\ \vspace{2pt}
+    \textbf{Automation \& Tooling}{: Go, Python, Git, GitOps, Docker, containers, CI/CD, ticketing systems, infrastructure automation} \\ \vspace{2pt}
+    \textbf{General}{: Microsoft Office, project management, quality inspection, customer service}
+  }}
+\end{itemize}
+\vspace{-14pt}
+
+% ============================== EDUCATION ==============================
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Ivy Tech Community College (Online)}{October 2025}
+    {Software Development}{Indiana}
+  \resumeSubheading
+    {Newcastle High School}{May 2017}
+    {Diploma}{New Castle, IN}
+\resumeSubHeadingListEnd
+
+\end{document}
